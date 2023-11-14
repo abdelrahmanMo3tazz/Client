@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your App - Upload</title>
+    <!-- Include Firebase SDK -->
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-storage.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-database.js"></script>
+    <!-- Include your own Firebase config -->
+    <script src="firebase-config.js"></script>
+    <!-- Include your own script file -->
+    <script src="app.js"></script>
+</head>
+<body>
+    <h1>Hello <span id="userName"></span>!</h1>
+    <input type="file" id="fileInput" />
+    <button onclick="uploadFile()">Upload File</button>
+    <progress value="0" max="100" id="uploader">0%</progress>
+</body>
+</html>
